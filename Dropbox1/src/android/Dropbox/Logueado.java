@@ -13,10 +13,8 @@ public class Logueado extends Activity {
       //Localizar los controles
         TextView txtSaludo = (TextView)findViewById(R.id.TxtEmail);
 
-        //Recuperamos la información pasada en el intent
+        //Recuperamos la informaciï¿½n pasada en el intent
         Bundle bundle = this.getIntent().getExtras();
 
-        //Construimos el mensaje a mostrar
-        txtSaludo.setText("Hola " + bundle.getString("CORREO"));
        }
 }
