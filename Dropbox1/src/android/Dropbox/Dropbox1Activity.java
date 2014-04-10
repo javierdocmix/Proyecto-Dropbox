@@ -41,7 +41,7 @@ public class Dropbox1Activity extends Activity {
 		final EditText txtPassword = (EditText) findViewById(R.id.TxtPassword);
 		final Button btnLogin = (Button) findViewById(R.id.BtnLogin);
 
-		// Implementamos el evento “click” del botón
+		// Implementamos el evento ï¿½clickï¿½ del botï¿½n
 		btnLogin.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -52,18 +52,18 @@ public class Dropbox1Activity extends Activity {
 					Context context = getApplicationContext();
 					int duration = Toast.LENGTH_LONG;
 					Toast toast = Toast.makeText(context,
-							"Introduzca correo y contraseña", duration);
+							"Introduzca correo y contraseï¿½a", duration);
 					toast.show();
 
 				} else {
 
-					// Comprobamos que el correo y contraseña aportados pertenecen a una cuenta de dropbox
+					// Comprobamos que el correo y contraseï¿½a aportados pertenecen a una cuenta de dropbox
 					
 					
 					
 					// Creamos el Intent
 					Intent intent = new Intent(Dropbox1Activity.this, Logueado.class);
-					// Añadimos la información correo al intent que se le pasa a la nueva actividad
+					// Aï¿½adimos la informaciï¿½n correo al intent que se le pasa a la nueva actividad
 					Bundle b = new Bundle();
 					b.putString("CORREO", txtCorreo.getText().toString());
 					intent.putExtras(b);
@@ -78,19 +78,5 @@ public class Dropbox1Activity extends Activity {
 		getMenuInflater().inflate(R.layout.main, menu);
 		return true;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 }
